@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+    --cor-fundo: #F3F5FC;
+    --cor-destaque: #052051;
+    --cor-secundaria: #D8DFE8;
+    --cor-texto-2nd--pesado: #343a40;
+    --cor-texto-2nd--leve: #495057;
+    --fonte-principal: 'Inter', sans-serif;
+
+}
+
+
+/* ResetCSS */
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: var(--fonte-principal);
+}
+
+html{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--cor-fundo)
+}
+
+.principal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+    margin: 5%
+}
+
+.principal__entrada{
+    height: 57em;
+    width: 42.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10em;
+    color: var(--cor-fundo);
+}
+
+
+#principal__entrada__input__texto{
+    font-family: var(--fonte-principal);
+    font-size: 2em;
+    font-weight: 400;
+    color:var(--cor-destaque);
+    background-color:  var(--cor-fundo);
+    width: 100%;
+    height: 15em;
+    border: none;
+    resize: none;
+    outline: none;
+}
+
+.principal__entrada__botoes{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    color: var(--cor-texto-2nd--leve)
+}
+
+.botoes{
+    display: flex;
+    text-decoration: none;
+    gap: 3em;
+}
+
+#botao_cripto{
+    border: 0.125em solid;
+    padding: 1.5em 8em 1.5em 8em;
+    border-radius: 1.5em;
+    background-color: var(--cor-destaque);
+    color: white;
+    font-size: 1em;
+}
+
+#botao_decripto{
+    border: 0.125em solid;
+    padding: 1.5em 8em 1.5em 8em;
+    border-color: var(--cor-destaque);
+    border-radius: 1.5em;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-destaque);
+    font-size: 1em;
+}
+
+.principal__saida{
+    background-color: white;
+    width: 18.75em;
+    height: 59em;
+    border-radius: 32px;
+    margin: 2.5em, 2.5em, 2.5em, 62.5em;
+}
+
+.principal__saida__resultado{
+    padding-top: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+}

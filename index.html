@@ -13,21 +13,32 @@
     </header>
 
     <main class="principal">
-        <section class="principal__conteudo"></section>
-        <div class="principal__conteudo__input">
-            <textarea id="principal__conteudo__input__texto">Digite seu texto</textarea>
-        </div>
-        <div class="principal__conteudo__resultado">
-            <h1 id="principal__conteudo__resultado__titulo"> Nenhuma mensagem encontrada</h1>
-            <p id="principal__conteudo__resultado__texto">Digite um texto que você deseja criptografar ou decriptografar</p>
-            <p id="principal__conteudo__resultado_valor"></p>
-            <img id="principal__conteudo__resultado__empty" src="./assets/img_empty.svg">
-        </div>
-        <div class="principal__conteudo__botoes"> 
-            <!--incluir propriedade onclick-->
-            <button>Criptografar</button>
-            <button>Decriptografar</button>
-        </div>
+        <section class="principal__entrada">
+            <div class="principal__entrada__input">
+                <textarea id="principal__entrada__input__texto">Digite seu texto</textarea>
+            </div>   
+            <div class="principal__entrada__botoes"> 
+                <div id="disclaimer_input">
+                    <!--Incluir icone exclamação-->
+                    <p>apenas letras minúsculas e sem acento</p>
+                </div>
+                <div class="botoes">
+                    <!--incluir propriedade onclick-->
+                    <button id="botao_cripto">Criptografar</button>
+                    <button id="botao_decripto">Decriptografar</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="principal__saida">
+            <div class="principal__saida__resultado">
+                <p id="principal__saida__resultado_valor"></p>
+                <img id="principal__saida__resultado__empty" src="./assets/img_empty.svg">
+                <h1 id="principal__saida__resultado__titulo"> Nenhuma mensagem encontrada</h1>
+                <p id="principal__saida__resultado__texto">Digite um texto que você deseja criptografar ou decriptografar</p>
+            </div>
+        </section>
+    
     </main>
 
     <footer class="rodape"> Desenvolvido por Lucas Jesus
