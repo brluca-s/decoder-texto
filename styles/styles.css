@@ -2,8 +2,9 @@
 
 :root {
     --cor-fundo: #F3F5FC;
-    --cor-destaque: #052051;
+    --cor-destaque: #0A3871;
     --cor-secundaria: #D8DFE8;
+    --cor-terciaria: #356EA9;
     --cor-texto-2nd--pesado: #343a40;
     --cor-texto-2nd--leve: #495057;
     --fonte-principal: 'Inter', sans-serif;
@@ -16,6 +17,7 @@
     margin: 0;
     padding: 0;
     font-family: var(--fonte-principal);
+    box-sizing: border-box;
 }
 
 html{
@@ -24,7 +26,6 @@ html{
 }
 
 body{
-    box-sizing: border-box;
     background-color: var(--cor-fundo)
 }
 
@@ -32,6 +33,7 @@ body{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    flex-wrap: wrap;
     gap: 40px;
     margin: 5%
 }
@@ -40,6 +42,7 @@ body{
     height: 57em;
     width: 42.5em;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-between;
     gap: 10em;
@@ -60,16 +63,20 @@ body{
     outline: none;
 }
 
+#principal__entrada__input__texto::placeholder{
+    color: var(--cor-destaque);
+}
+
 .principal__entrada__botoes{
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    color: var(--cor-texto-2nd--leve)
+    color: var(--cor-texto-2nd--leve);
+    gap: 1em    
 }
 
 .botoes{
     display: flex;
-    text-decoration: none;
     gap: 3em;
 }
 
@@ -97,13 +104,78 @@ body{
     width: 18.75em;
     height: 59em;
     border-radius: 32px;
-    margin: 2.5em, 2.5em, 2.5em, 62.5em;
-}
-
-.principal__saida__resultado{
-    padding-top: 100%;
+    margin: 2.5em;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+}
 
+#principal__saida__img__empty{
+    width:80%;
+    height: auto;
+}
+
+
+.rodape{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    color: var(--cor-fundo);
+    background-color: var(--cor-terciaria);
+    padding: 1em;
+    border-radius: 0.25em;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+#link_img{
+    width: 1.75em;
+    height: auto;
+}
+
+@media (max-width: 1220px) {
+    
+    .principal{
+        flex-direction: column;
+        justify-content: center;
+    
+    }
+
+    .principal__entrada{
+        width: 100%;
+    }
+
+    .principal__saida{
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+        height: auto;
+        width: 99%;
+        padding: 2%;
+        margin: 0%;
+ 
+    }
+
+    #principal__saida__img__empty{
+        height: 0%;
+        display: none;
+
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    
+    .botoes{
+        flex-wrap: wrap;
+    }
+
+    #botao_depcrito{
+        padding: 0 0 0 0;
+    }
 }

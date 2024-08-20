@@ -15,12 +15,11 @@
     <main class="principal">
         <section class="principal__entrada">
             <div class="principal__entrada__input">
-                <textarea id="principal__entrada__input__texto">Digite seu texto</textarea>
+                <textarea id="principal__entrada__input__texto" placeholder="Digite seu texto"></textarea>
             </div>   
             <div class="principal__entrada__botoes"> 
                 <div id="disclaimer_input">
-                    <!--Incluir icone exclamação-->
-                    <p>apenas letras minúsculas e sem acento</p>
+                    <p> <img src="./assets/bi_exclamation-circle-fill.png">Apenas letras minúsculas e sem acento.</p>
                 </div>
                 <div class="botoes">
                     <!--incluir propriedade onclick-->
@@ -33,7 +32,7 @@
         <section class="principal__saida">
             <div class="principal__saida__resultado">
                 <p id="principal__saida__resultado_valor"></p>
-                <img id="principal__saida__resultado__empty" src="./assets/img_empty.svg">
+                <img id="principal__saida__img__empty" src="./assets/img_empty.svg">
                 <h1 id="principal__saida__resultado__titulo"> Nenhuma mensagem encontrada</h1>
                 <p id="principal__saida__resultado__texto">Digite um texto que você deseja criptografar ou decriptografar</p>
             </div>
@@ -41,8 +40,9 @@
     
     </main>
 
-    <footer class="rodape"> Desenvolvido por Lucas Jesus
-        <a href="https://github.com/brluca-s?tab=repositories"> - GitHub</a>
+    <footer class="rodape"> 
+        <p>Desenvolvido por Lucas Jesus</p> 
+        <a id="rodape__link" href="https://github.com/brluca-s?tab=repositories"> <img id="link_img" src="./assets/github.png"></a>
     </footer> 
 </body>
 </html>
