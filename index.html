@@ -23,14 +23,14 @@
                 </div>
                 <div class="botoes">
                     <!--incluir propriedade onclick-->
-                    <button id="botao_cripto">Criptografar</button>
+                    <button id="botao_cripto" onclick="exibeResultado()">Criptografar</button>
                     <button id="botao_decripto">Decriptografar</button>
                 </div>
             </div>
         </section>
 
         <section class="principal__saida">
-            <div class="principal__saida__resultado">
+            <div id="p1" class="principal__saida__resultado">
                 <p id="principal__saida__resultado_valor"></p>
                 <img id="principal__saida__img__empty" src="./assets/img_empty.svg">
                 <h1 id="principal__saida__resultado__titulo"> Nenhuma mensagem encontrada</h1>
@@ -44,5 +44,7 @@
         <p>Desenvolvido por Lucas Jesus</p> 
         <a id="rodape__link" href="https://github.com/brluca-s?tab=repositories"> <img id="link_img" src="./assets/github.png"></a>
     </footer> 
+
+    <script src="app.js" defer ></script>
 </body>
 </html>

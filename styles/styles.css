@@ -7,6 +7,7 @@
     --cor-terciaria: #356EA9;
     --cor-texto-2nd--pesado: #343a40;
     --cor-texto-2nd--leve: #495057;
+    --cor-saida: #495057;
     --fonte-principal: 'Inter', sans-serif;
 
 }
@@ -100,6 +101,7 @@ body{
 }
 
 .principal__saida{
+    /* Ajustar alinhamento do resultado_valor quando único elemento em tela */
     background-color: white;
     width: 18.75em;
     height: 59em;
@@ -109,6 +111,13 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+}
+
+#principal__saida__resultado_valor{
+    color: var(--cor-saida);
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 #principal__saida__img__empty{
