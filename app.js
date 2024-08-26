@@ -1,6 +1,5 @@
 function obterTexto(id) {
     let textoEntrada = document.getElementById(id).value;
-    // console.log(textoEntrada);
     return textoEntrada;
 }
 
@@ -66,7 +65,7 @@ function exibeResultado(textoSaida) {
 function iniciarCriptografia() {
     let textoEntrada = obterTexto('principal__entrada__input__texto');
     let textoSaida = criptografar(textoEntrada);
-    alterarValorElemento(".principal__saida__resultado button", "Copiar");
+    alterarValorElemento(".principal__saida button", "Copiar");
     exibeResultado(textoSaida);
 
 
@@ -76,7 +75,7 @@ function iniciarCriptografia() {
 function iniciarDesriptografia() {
     let textoEntrada = obterTexto('principal__entrada__input__texto');
     let textoSaida = descriptografar(textoEntrada);
-    alterarValorElemento(".principal__saida__resultado button", "Copiar");
+    alterarValorElemento(".principal__saida button", "Copiar");
     exibeResultado(textoSaida);
 }
 
@@ -89,10 +88,10 @@ function copiarResultado() {
     textoSaida = obterTextoTAG('principal__saida__resultado_valor');
     try {
         navigator.clipboard.writeText(textoSaida);
-        alterarValorElemento(".principal__saida__resultado button", "Texto copiado!")
+        alterarValorElemento(".principal__saida button", "Texto copiado!")
         
     } catch (error) {
         console.error(error.message);
-        alterarValorElemento(".principal__saida__resultado button", "Erro ao copiar")
+        alterarValorElemento(".principal__saida button", "Erro ao copiar")
     }
 }

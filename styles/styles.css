@@ -80,29 +80,31 @@ body{
 .botoes{
     display: flex;
     gap: 3em;
+    box-sizing: border-box;
 }
 
 #botao_cripto{
     border: 0.125em solid;
-    padding: 1.5em 8em 1.5em 8em;
+    padding: 1.5em 7.355em 1.5em 7.355em;
     border-radius: 1.5em;
     background-color: var(--cor-destaque);
     color: white;
     font-size: 1em;
+    text-align: center;
 }
 
 #botao_decripto{
     border: 0.125em solid;
-    padding: 1.5em 8em 1.5em 8em;
+    padding: 1.5em 6.8em 1.5em 6.8em;
     border-color: var(--cor-destaque);
     border-radius: 1.5em;
     background-color: var(--cor-secundaria);
     color: var(--cor-destaque);
     font-size: 1em;
+    text-align: center;
 }
 
 .principal__saida{
-    /* Ajustar alinhamento do resultado_valor quando único elemento em tela */
     background-color: white;
     width: 18.75em;
     height: 59em;
@@ -124,7 +126,6 @@ body{
 
 #principal__saida__img__empty{
     width:80%;
-    /*padding-top: 60%*/;
     height: auto;
 }
 
@@ -175,7 +176,8 @@ body{
 
     .principal__saida{
         justify-content: flex-start;
-        flex-direction: column-reverse;
+        flex-direction: column;
+        gap: 1em;
         height: auto;
         width: 99%;
         padding: 2%;
@@ -192,13 +194,13 @@ body{
 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 840px) {
     
     .botoes{
         flex-wrap: wrap;
+        gap: 1em;
+        justify-content: center;
     }
 
-    #botao_depcrito{
-        padding: 0 0 0 0;
-    }
+
 }
