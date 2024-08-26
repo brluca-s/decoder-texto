@@ -27,7 +27,8 @@ html{
 }
 
 body{
-    background-color: var(--cor-fundo)
+    background-color: var(--cor-fundo);
+    height: 100%;
 }
 
 .principal{
@@ -111,6 +112,7 @@ body{
     flex-direction: column;
     text-align: center;
     justify-content: center;
+    padding: 2em;
 }
 
 #principal__saida__resultado_valor{
@@ -122,9 +124,21 @@ body{
 
 #principal__saida__img__empty{
     width:80%;
+    /*padding-top: 60%*/;
     height: auto;
 }
 
+#botao_copiar{
+    border: 0.125em solid;
+    border-radius: 1.5em;
+    padding: 1em 6em 1em 6em;
+    border-color: var(--cor-destaque);
+    border-radius: 1.5em;
+    background-color: white;
+    color: var(--cor-destaque);
+    font-size: 1em;
+    display: none;
+}
 
 .rodape{
     display: flex;
